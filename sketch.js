@@ -25,6 +25,15 @@ function removeFromArray(arr, ele)
     }
 }
 
+function getFormData()
+{
+    var startPoint = document.getElementById("startPoint").value;
+    var endPoint = document.getElementById("endPoint").value;
+    console.log("Start Point: ");
+    console.log(startPoint);
+    console.log("End Point: ");
+    console.log(endPoint);
+}
 function heuristic(a,b)
 {
     //calculating the distance between the two node a and b
