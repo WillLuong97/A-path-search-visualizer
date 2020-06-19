@@ -25,6 +25,7 @@ function removeFromArray(arr, ele)
     }
 }
 
+//function to retrieve coordinate from the form.
 function getFormData()
 {
     var coordinate = [];
@@ -162,6 +163,8 @@ function setup(){
         
     }
     //initializing the position of the start node:
+    var coordListFromForm = getFormData();
+    alert(coordListFromForm);
     start = grid[0][0]; //top left
     end = grid[cols - 1][rows - 1]; //bottom right
     //the start and end points can never be an obstacles
